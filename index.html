@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="try.css">
+    <script src="jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <script src="dropdown.js"></script>
+    <script src="themechange.js"></script>
+    <script src="home.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body id="body">
+    <header class="header theme">
+        <h1 class="heading1"> Architecture </h1>
+    </header>
+    <section class="row">
+        <nav class="sidenav leftcolumn">
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li><a href="projecttry.html">Top 5</a></li>
+                <li><a href="gallery.html">Resources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="summary.html">Summery</a></li>
+                <li class="sidedrop"><a style="cursor: pointer;">Theme</a></li>
+                <ul class="sidepannel">
+                    <li> <input type="radio" name="theme" id="theme1" checked>Original </li>
+                    <li> <input type="radio" name="theme" id="theme2">Theme2 </li>
+                </ul>
+            </ul>
+        </nav>
+        <section class="rightcolumn">
+            <!-- Image- Main-ful size -->
+
+            <div class="row1">
+                <div class="img_container">
+                    <img src="anime/pic0.jpg" onerror="this.src='anime/pic1.jpg'" id="main_img" alt="building"
+                        onmouseover="clearInterval(myTimer);myTimer=setInterval(animation,1500)"
+                        onmouseout=" clearInterval(myTimer)">
+
+                    <div class="text-block">
+                        <h2 style="text-align: center;">Welcome</h2>
+                        <p>"Architecture is the thoughtful making of space." <br> <sub>- Louis Kahn, American
+                                architect.</sub> </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three columns -->
+
+            <div class="row2">
+                <div class="column" onclick="openTab('b1');" style="background:#000000;">
+                    About
+                </div>
+                <div class="column" onclick="openTab('b2');" style="background:#9a3901;">
+                    Features
+                </div>
+                <div class="column" onclick="openTab('b3');" style="background:#0095ff;">
+                    Contact
+                </div>
+            </div>
+
+            <!-- Full-width columns: (hidden by default) -->
+            <div id="b1" class="containerTab" style="display:none;background:#000000">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>About</h2>
+                <p>Welcome to our website dedicated to the world's tallest buildings. From the iconic Burj Khalifa to
+                    the upcoming Jeddah Tower, our comprehensive guide provides you with everything you need to know
+                    about these awe-inspiring structures. Explore the history, architecture, and engineering behind
+                    these towering feats of human ingenuity.</p>
+            </div>
+
+            <div id="b2" class="containerTab" style="display:none;background:#9a3901">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Resource</h2>
+                <p>Welcome to our resource section, where you can find additional information about the world's tallest
+                    buildings. We've curated a list of books, documentaries, and images to help you delve deeper into
+                    the history, architecture, and engineering behind these incredible structures. Explore and learn
+                    with our recommended resources.</p>
+            </div>
+
+            <div id="b3" class="containerTab" style="display:none;background:#0095ff">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h2>Contact Details</h2>
+                <button id="contact_icon0"><i class="material-icons">phone</i></button>
+                <button id="contact_icon1"><i class="material-icons">mail</i></button>
+                <button id="contact_icon2"><i class="material-icons">location_on</i></button>
+
+                <p id="contact0" class="contact"> <a href=""> <i class="material-icons">phone</i> 778-999-9999 </a></p>
+                <p id="contact1" class="contact"><a href=""><i
+                            class="material-icons">mail</i>architectworld@gmail.com</a></p>
+                <p id="contact2" class="contact"> <a href=""> <i class="material-icons">location_on</i> 438 Terminal
+                        Avenue,
+                        Vancouver BC V6A
+                        0C1</a></p>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <h3> footer</h3>
+    </footer>
+</body>
+
+</html>
