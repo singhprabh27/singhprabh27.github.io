@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <script src="jquery-3.6.4.js"></script>
+    <script src="quizdraft.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <table id="quiz_container">
+        <!--  row1-->
+        <tr class="row1">
+            <td class="col1"><input type="radio" name="qnum" id="q1" onclick="select_q(1)">Q1</td>
+            <!--  images-->
+            <!--  column2-->
+
+            <td  rowspan="1" class="col2">
+                <p id="disp">QuestionWillApearHere</p>
+
+            </td>
+            <td rowspan="4" class="col3">
+                <p id="compdisp">correctAnsWillShowHere</p>
+            </td>
+        </tr>
+        <!--  row2-->
+        <tr class="row2">
+            <td class="col1"><input type="radio" name="qnum" id="q2" onclick="select_q(2)">Q2
+            </td>
+            <td rowspan="2" class="col2">
+                <input type="radio" name="user_ans" id="a" value=""></input>
+                <label for="a" id="a_text">optionA</label>
+                <input type="radio" name="user_ans" id="b" value=""></input>
+                <label for="b" id="b_text">optionB</label>
+                <input type="radio" name="user_ans" id="c" value=""> </input>
+                <label for="c" id="c_text">optionC</label>
+            </td>
+        </tr>
+
+        <!--  row3-->
+
+        <tr class="row3">
+            <td class="col1"><input type="radio" name="qnum" id="q3" onclick="select_q(3)">Q3</td>
+        </tr>
+        <!--  row4-->
+
+        <tr>
+            <td class="col1"><input id="resetbt" type="button" value="Reset" onclick="resett()"></td>
+            <td><input id="submitbt" type="button" value="Submit" onclick="display()">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

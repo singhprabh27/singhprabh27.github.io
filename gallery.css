@@ -1,0 +1,98 @@
+ /* The grid: Four equal grid_columns that floats next to each other */
+ .grid_column {
+     float: left;
+     width: 25%;
+     padding: 10px;
+ }
+
+ /* Style the images inside the grid */
+ .grid_column img {
+     opacity: 0.8;
+     cursor: pointer;
+     max-height: 200px;
+ }
+
+ .grid_column img:hover {
+     opacity: 1;
+ }
+
+ /* Clear floats after the grid_columns */
+ .grid_row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ /* The expanding image grid_container */
+ .grid_container {
+     position: relative;
+     display: none;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+
+ }
+
+ /* The expanding image */
+
+ #expandedImg {
+
+     width: 100%;
+ }
+
+ /* Expanding image text */
+ #imgtext {
+     position: absolute;
+     bottom: 10px;
+     text-align: center;
+     width: 100%;
+     background-color: white;
+     font-size: 20px;
+ }
+
+ /* Closable button inside the expanded image */
+ .grid_closebtn {
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     color: white;
+     font-size: 35px;
+     cursor: pointer;
+ }
+
+ /* book grid */
+
+ /* The grid: Four equal book_columns that floats next to each other */
+ .book_column {
+     float: left;
+     width: 20%;
+     padding: 15px;
+ }
+
+ /* Style the images inside the grid */
+ .book_column img {
+     opacity: 0.8;
+     cursor: pointer;
+     height: 350px;
+ }
+
+ .book_column img:hover {
+     opacity: 1;
+ }
+
+ /* Clear floats after the book_columns */
+ .book_row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ @media (max-width: 900px) {
+
+     .book_column {
+         float: left;
+         width: 25%;
+         padding: 10px;
+     }
+
+ }

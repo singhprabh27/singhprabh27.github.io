@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="try.css">
+    <script src="jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="gallery.css">
+    <script src="dropdown.js"></script>
+    <script src="themechange.js"></script>
+    <script src="gallery.js"></script>
+</head>
+
+<body id="body">
+    <header class="header theme">
+        <h1 class="heading1"> Architecture </h1>
+    </header>
+    <section class="row">
+        <nav class="sidenav leftcolumn">
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li><a href="projecttry.html">Top 5</a></li>
+                <li><a href="gallery.html">Resources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="summary.html">Summery</a></li>
+                <li class="sidedrop"><a style="cursor: pointer;">Theme</a></li>
+                <ul class="sidepannel">
+                    <li> <input type="radio" name="theme" id="theme1" checked>Original </li>
+                    <li> <input type="radio" name="theme" id="theme2">Theme2 </li>
+                </ul>
+            </ul>
+        </nav>
+        <section class="rightcolumn">
+            <div class="tab_header">
+                <h2 style="text-align: center;">Resources</h2>
+                <p>Welcome to our resource section, where you can find additional information about the world's tallest
+                    buildings. We've curated a list of books, documentaries, and images to help you delve deeper into
+                    the history, architecture, and engineering behind these incredible structures. Explore and learn
+                    with our recommended resources.</p>
+            </div>
+            <!-- Books-->
+            <section class="book_grid" style="text-align:center">
+                <div class="sec_heading" >
+                    <h2> Books </h2>
+                    <p>Click for details</p>
+                </div>
+
+                <!-- The four book_columns -->
+                <div class="book_row">
+                    <div class="book_column">
+                        <a href="https://read.amazon.ca/kp/embed?asin=B0084BIYDM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_XRCRF55NC05D4MVJE7DN"
+                            target="_blank"> <img
+                                src="https://m.media-amazon.com/images/I/418K1qOc-ZL._SX311_BO1,204,203,200_.jpg"
+                                alt="Nature" style="width:100%" ;> </a>
+                    </div>
+                    <div class="book_column">
+                        <a href="https://a.co/d/5yAdXw3" target="_blank"> <img
+                                src="https://m.media-amazon.com/images/I/51OH+-nTSqL._SX246_BO1,204,203,200_.jpg"
+                                alt="Nature" style="width:100%" ;> </a>
+                    </div>
+                    <div class="book_column">
+                        <a href="https://a.co/d/1m3WPCZ" target="_blank"> <img
+                                src="https://m.media-amazon.com/images/I/6197EomO6pL._SX376_BO1,204,203,200_.jpg"
+                                alt="Nature" style="width:100%" ;> </a>
+                    </div>
+                    <div class="book_column">
+                        <a href="https://read.amazon.ca/kp/embed?asin=B01N0OD4FJ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_94HDBNSM0YX089GFCKX5"
+                            target="_blank"> <img
+                                src="https://m.media-amazon.com/images/I/51BU1hgRd+L._SX331_BO1,204,203,200_.jpg"
+                                alt="Nature" style="width:100%" ;> </a>
+                    </div>
+                    <div class="book_column">
+                        <a href="https://a.co/d/ge8D2mS" target="_blank"> <img
+                                src="https://m.media-amazon.com/images/I/51CoY3fTK-L._SX338_BO1,204,203,200_.jpg"
+                                alt="Nature" style="width:100%" ;> </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Image Grid-->
+            <section class="img_grid" style="text-align:center">
+                <div class="sec_heading">
+                <h2> Image Gallery</h2>
+                <p>Click on the images:</p>
+                </div>
+                <!-- The four grid_columns -->
+                <div class="grid_row">
+                    <div class="grid_column">
+                        <img src="images1/burjkhalifa.jpg" alt="Burj Khalifa" style="width:100%" onclick="grid_func(this);">
+                    </div>
+                    <div class="grid_column">
+                        <img src="images1/clocktowernew.jpg" alt="Abraj Al-Bait Clock Tower" style="width:100%" onclick="grid_func(this);">
+                    </div>
+                    <div class="grid_column">
+                        <img src="images1/merdeka114.webp" alt="Merdeka114" style="width:100%"
+                            onclick="grid_func(this);">
+                    </div>
+                    <div class="grid_column">
+                        <img src="images1/financecenter.jpg" alt="Finance Center" style="width:100%" onclick="grid_func(this);">
+                    </div>
+                </div>
+
+                <div class="grid_container">
+                    <span onclick="this.parentElement.style.display='none'" class="grid_closebtn">&times;</span>
+                    <img id="expandedImg">
+                    <div id="imgtext"></div>
+                </div>
+            </section>
+
+        </section>
+    </section>
+
+    <footer class="footer">
+        <h3> footer</h3>
+    </footer>
+</body>
+
+</html>

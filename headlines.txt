@@ -1,0 +1,40 @@
+Welcome to our website dedicated to the world's tallest buildings. From the iconic Burj Khalifa to the upcoming Jeddah Tower, our comprehensive guide provides you with everything you need to know about these awe-inspiring structures. Explore the history, architecture, and engineering behind these towering feats of human ingenuity.
+
+Gallery: A collection of high-quality images and videos of skyscrapers, including historical and modern photographs, 3D models, and time-lapse videos.
+
+Resources: A section that provides additional resources for those interested in learning more about skyscrapers, including books, images and videos.
+
+Resources: A section that provides additional resources for those interested in learning more about skyscrapers, including books, images and videos.
+
+"Welcome to our resource section, where you can find additional information about the world's tallest buildings. We've curated a list of books, documentaries, and images to help you delve deeper into the history, architecture, and engineering behind these incredible structures. Explore and learn with our recommended resources."
+
+REquirnments
+HTML:
+1.hyperlinks: 
+
+CSS
+
+Javascript
+
+Animation
+
+Jquery
+
+
+q1
+Which of the following has a height of around 800m?
+a. Merdeka 118
+b. Burj Khalifa
+c. Abraj Al-Bait Clock Tower
+
+q2
+Which building among Top-5 was completed in the year 2015?
+a. Merdeka 118
+b. Ping An International Finance Centre
+c. Shanghai Tower
+
+q3
+Second tallest building in china?
+a. Ping An International Finance Centre
+b. Shanghai tower
+c. Merdeka 118

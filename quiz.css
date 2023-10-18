@@ -1,0 +1,51 @@
+/*quiz*/
+
+
+#quiz_container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+}
+
+#quiz_container td {
+    text-align: center;
+    overflow: auto;
+    background-color: #979797;
+}
+
+
+.col1 {
+    width: 20%;
+    height: 40px;
+}
+
+.col2 {
+    width: 60%;
+    height: 40px;
+
+}
+
+.col3 {
+    width: 20%;
+    height: 40px;
+
+}
+
+/* quiz_buttons*/
+#submitbt,
+#resetbt {
+    text-align: center;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+}
+
+#submitbt:hover,
+#resetbt:hover {
+
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}

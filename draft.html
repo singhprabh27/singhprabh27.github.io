@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j-query</title>
+    <script src="jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="stylejquery.css">
+    <!--J Query-->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").hide();
+            });
+        });
+        $(document).ready(function () {
+            $("#color_pannel").click(function () {
+                $("#art").slideToggle(2000);
+            });
+        });
+        $(document).ready(function () {
+            $("#pannel2").click(function () {
+                $("#flip2").slideToggle(2000);
+            });
+        });
+        $(document).ready(function () {
+            $("#pannel3").click(function () {
+                $("#flip3").slideToggle(2000);
+            });
+        });
+        $(document).ready(function () {
+            $("#pannel4").click(function () {
+                $("#flip4").slideToggle(2000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="color_pannel">Color Palette</div>
+    <div id="art">
+        <p><a href="https://en.wikipedia.org/wiki/File:Burj_Khalifa.jpg#/media/File:Burj_Khalifa.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Burj_Khalifa.jpg/1200px-Burj_Khalifa.jpg" alt="Burj Khalifa.jpg"></a><br>By &lt;a href="https://commons.wikimedia.org/wiki/User:Donaldytong" class="extiw" title="commons:User:Donaldytong"&gt;Donaldytong&lt;/a&gt; - &lt;a href="https://commons.wikimedia.org/wiki/File:Burj_Khalifa.jpg" class="extiw" title="commons:File:Burj Khalifa.jpg"&gt;commons:File:Burj Khalifa.jpg&lt;/a&gt;, originally from the author as noted below. Deleted from Commons by admin &lt;a href="https://commons.wikimedia.org/wiki/User:King_of_Hearts" class="extiw" title="commons:User:King of Hearts"&gt;King of Hearts&lt;/a&gt; 5 November 2012., <a href="https://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-ShareAlike 3.0">CC BY-SA 3.0</a>, <a href="https://en.wikipedia.org/w/index.php?curid=37469604">Link</a></p>
+    </div>
+    <div id="pannel2">J Query</div>
+    <div id="flip2">
+
+    </div>
+    <h2 id="pannel3">Rock Paper scissor game</h2>
+    <div id="flip3">
+    </div>
+    <h2 id="pannel4">CSS animation</h2>
+    <div id="flip4">
+    </div>
+</body>
+
+</html>

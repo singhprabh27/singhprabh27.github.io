@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--J query-->
+    <script src="jquery-3.6.4.js"></script>
+    <!--J query for contact section-->
+
+    <script>
+        for (let i = 0; i < 3; i++) {
+            let icon_id = '#contact_icon' + i;
+            let contact_id = '#contact' + i;
+            $(document).ready(function () {
+                $(icon_id).click(function () {
+                    $(contact_id).toggle();
+                });
+            });
+        }
+    </script>
+    <!--css for contact section-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .contact {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Contact Details</h2>
+
+
+    <button id="contact_icon0"><i class="material-icons">phone</i></button>
+    <button id="contact_icon1"><i class="material-icons">mail</i></button>
+    <button id="contact_icon2"><i class="material-icons">location_on</i></button>
+
+    <p id="contact0" class="contact"> <a href=""> <i class="material-icons">phone</i> 778-999-9999 </a></p>
+    <p id="contact1" class="contact"><a href=""><i class="material-icons">mail</i>architectworld@gmail.com</a></p>
+    <p id="contact2" class="contact"> <a href=""> <i class="material-icons">location_on</i> 438 Terminal Avenue,
+            Vancouver BC V6A
+            0C1</a></p>
+
+</body>
+
+</html>

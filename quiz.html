@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quiz</title>
+    <link rel="stylesheet" href="try.css">
+    <script src="jquery-3.6.4.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="themechange.js"></script>
+    <script src="quizdraft.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body id="body">
+    <header class="header theme">
+        <h1 class="heading1"> Architecture </h1>
+    </header>
+    <section class="row">
+
+        <nav class="sidenav leftcolumn">
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li><a href="projecttry.html">Top 5</a></li>
+                <li><a href="gallery.html">Resources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="summary.html">Summery</a></li>
+                <li class="sidedrop"><a style="cursor: pointer;">Theme</a></li>
+                <ul class="sidepannel">
+                    <li> <input type="radio" name="theme" id="theme1" checked>Original </li>
+                    <li> <input type="radio" name="theme" id="theme2">Theme2 </li>
+                </ul>
+            </ul>
+        </nav>
+        <section class="rightcolumn">
+            <div class="tab_header">
+                <h2 style="text-align: center;">Quiz</h2>
+                <p>Challenge your knowledge of the world's tallest buildings with our quiz section. Test your understanding of the history, architecture, and engineering of these impressive structures with our interactive and engaging quizzes. Expand your knowledge and have fun with our quiz section.. Good Luck</p>
+            </div>
+            <section class="quiz_grid" style="text-align:center">
+                <table id="quiz_container">
+                    <!--  row1-->
+                    <tr class="row1">
+                        <td class="col1"><input type="radio" name="qnum" id="q1" onclick="select_q(1)">Q1</td>
+                        <!--  images-->
+                        <!--  column2-->
+
+                        <td rowspan="1" class="col2">
+                            <p id="disp">QuestionWillApearHere</p>
+
+                        </td>
+                        <td rowspan="4" class="col3">
+                            <p id="compdisp">Result</p>
+                        </td>
+                    </tr>
+                    <!--  row2-->
+                    <tr class="row2">
+                        <td class="col1"><input type="radio" name="qnum" id="q2" onclick="select_q(2)">Q2
+                        </td>
+                        <td rowspan="2" class="col2" style="text-align: left;">
+                            <input type="radio" name="user_ans" id="a" value=""></input>
+                            <label for="a" id="a_text">optionA</label>
+                            <br>
+                            <input type="radio" name="user_ans" id="b" value=""></input>
+                            <label for="b" id="b_text">optionB</label>
+                            <br>
+                            <input type="radio" name="user_ans" id="c" value=""> </input>
+                            <label for="c" id="c_text">optionC</label>
+                        </td>
+                    </tr>
+
+                    <!--  row3-->
+
+                    <tr class="row3">
+                        <td class="col1"><input type="radio" name="qnum" id="q3" onclick="select_q(3)">Q3</td>
+                    </tr>
+                    <!--  row4-->
+
+                    <tr>
+                        <td class="col1"><input id="resetbt" type="button" value="Reset" onclick="resett()"></td>
+                        <td><input id="submitbt" type="button" value="Submit" onclick="display()">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <h3> footer</h3>
+    </footer>
+</body>
+
+</html>

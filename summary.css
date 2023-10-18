@@ -1,0 +1,15 @@
+ #summary{
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    color: aliceblue;
+    font-size: 18px;
+    overflow: auto;
+ }
+
+ #summary h3 {
+    text-align: center;
+ }
+
+ per {
+    overflow: auto;
+ }

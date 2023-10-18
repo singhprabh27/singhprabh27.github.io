@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        /* book grid */
+
+        /* The grid: Four equal book_columns that floats next to each other */
+        .book_column {
+            float: left;
+            width: 20%;
+            padding: 15px;
+        }
+
+        /* Style the images inside the grid */
+        .book_column img {
+            opacity: 0.8;
+            cursor: pointer;
+            height: 350px;
+        }
+
+        .book_column img:hover {
+            opacity: 1;
+        }
+
+        /* Clear floats after the book_columns */
+        .book_row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section style="text-align:center">
+        <h2> Books </h2>
+        <p>Click for details</p>
+
+        <!-- The four book_columns -->
+        <div class="book_row">
+            <div class="book_column">
+                <a href="https://read.amazon.ca/kp/embed?asin=B0084BIYDM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_XRCRF55NC05D4MVJE7DN"
+                    target="_blank"> <img
+                        src="https://m.media-amazon.com/images/I/418K1qOc-ZL._SX311_BO1,204,203,200_.jpg" alt="Nature"
+                        style="width:100%" ;> </a>
+            </div>
+            <div class="book_column">
+                <a href="https://a.co/d/5yAdXw3" target="_blank"> <img
+                        src="https://m.media-amazon.com/images/I/51OH+-nTSqL._SX246_BO1,204,203,200_.jpg" alt="Nature"
+                        style="width:100%" ;> </a>
+            </div>
+            <div class="book_column">
+                <a href="https://a.co/d/1m3WPCZ" target="_blank"> <img
+                        src="https://m.media-amazon.com/images/I/6197EomO6pL._SX376_BO1,204,203,200_.jpg" alt="Nature"
+                        style="width:100%" ;> </a>
+            </div>
+            <div class="book_column">
+                <a href="https://read.amazon.ca/kp/embed?asin=B01N0OD4FJ&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_94HDBNSM0YX089GFCKX5"
+                    target="_blank"> <img
+                        src="https://m.media-amazon.com/images/I/51BU1hgRd+L._SX331_BO1,204,203,200_.jpg" alt="Nature"
+                        style="width:100%" ;> </a>
+            </div>
+            <div class="book_column">
+                <a href="https://a.co/d/ge8D2mS" target="_blank"> <img
+                        src="https://m.media-amazon.com/images/I/51CoY3fTK-L._SX338_BO1,204,203,200_.jpg" alt="Nature"
+                        style="width:100%" ;> </a>
+            </div>
+        </div>
+    </section>
+    <button>button</button>
+    <div id="div" style="position: absolute; background-color: rgb(187, 38, 38); height: 100px; width: 100px; margin: 100px;"></div>
+<script src="jquery-3.6.4.js"></script>
+<script>
+    $(document).ready(function () {
+    $("button").click(function () {
+        $("#div").animate({
+            height: '+=50px',
+            width: '+=50px'
+        });
+    });
+    
+});
+</script>
+</body>
+
+</html>

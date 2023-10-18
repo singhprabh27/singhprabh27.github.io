@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> summary</title>
+    <link rel="stylesheet" href="try.css">
+    <script src="jquery-3.6.4.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="themechange.js"></script>
+    <link rel="stylesheet" href="summary.css">
+</head>
+
+<body id="body">
+    <header class="header theme">
+        <h1 class="heading1"> Architecture </h1>
+    </header>
+    <section class="row">
+        <nav class="sidenav leftcolumn">
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li><a href="projecttry.html">Top 5</a></li>
+                <li><a href="gallery.html">Resources</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="summary.html">Summery</a></li>
+                <li class="sidedrop"><a style="cursor: pointer;">Theme</a></li>
+                <ul class="sidepannel">
+                    <li> <input type="radio" name="theme" id="theme1" checked>Original </li>
+                    <li> <input type="radio" name="theme" id="theme2">Theme2 </li>
+                </ul>
+            </ul>
+        </nav>
+        <section class="rightcolumn">
+            <div class="tab_header">
+                <h2 style="text-align: center;">Summary</h2>
+                <p>Welcome to our quiz section, where you can find additional information about the world's tallest
+                    buildings. We've curated a list of books, documentaries, and images to help you delve deeper into
+                    the history, architecture, and engineering behind these incredible structures. Explore and learn
+                    with our recommended resources.</p>
+            </div>
+            <div id="summary" style="overflow: auto;">
+
+                <h3>HTML:</h3>
+                <pre>
+                1.hyperlinks:  
+                    a.	All : navigation bar uses links to navigate to different tabs.
+                    b.	Home: has links to different sections in the opening box.
+                    c.	Top 5: Has links to different sources of information like Wikipedia.  
+                    d.Book section: uses images as a link.
+                2.Image tag: .
+                    a.Home: Animation uses IMG tag.
+                    b.Top 5: Images used as background. 
+                    c.Resource: 
+                        i.Book section: img tag for book cover.
+                        ii.Image Grid: img tag for smaller and enlarged images.
+                3.Table tag: 
+                    a.Top 5: table tag is used to show height, city, year.
+                4.list tag:
+                    a.All: navigation bar uses the list to show names of pages.
+                </pre>
+                <h3>CSS</h3>
+                <pre>
+                1.Background: images, opacity(transparency), color, position, size.
+                2.Display: for flip-flop panels: hiding and showing panel.
+                3.transform: top 5 page: scale property to zoom in on hover.
+                4.positioning: margins, padding, align height, float.
+                5.Responsiveness: stacking the navigation bar and right column when window is smaller than 600px.
+                </pre>
+                <h3>JavaScript</h3>
+                <pre>
+                1.Function: 
+                    a.Home: 3 boxes call a JS function, and the slide show uses a JS function.
+                    b.resources: image gallery uses JS function. 
+                2.If statements: Used in quiz.
+                3.Loop: 
+                    a.	Home: 3 boxes, and the image animation uses 'for loop'.
+                4.	Data types:
+                    a.	All of the above functions and loops uses different data types.
+                </pre>
+                <h3>Animation:</h3>
+                <pre>
+                1.	Image Grid: enlarge image uses CSS animation to appear.
+                2.	Java : Slide show of Home page uses JS time elements.
+                </pre>
+                <h3>jQuery</h3>
+                <pre>
+                1.	Effects:
+                    a.	Slidetoggle(): In “Top 5” page.
+                    b.	Fadeout (): In “Top 5” page , right small image fades when pannel opens.
+                    c.	Hide(): home page: contact section
+                    d.	Show(): home page :contact section
+                2.	HTML methods:
+                    a.	Css(): use to change theme.
+                    b.	Animate: quiz 'result' column- its opacity change when submit button is clicked.
+                3.	Traversing: 
+                    a.	Children(): used to Change Theme- change font color of all children of 'nav tag' .
+                </pre>
+
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <h3> footer</h3>
+    </footer>
+</body>
+
+</html>

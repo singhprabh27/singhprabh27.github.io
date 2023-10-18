@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(253, 225, 214);
+}
+
+#art,
+#flip2,
+#flip3,
+#flip4 {
+    display: none;
+    background-color: azure;
+    height: 400px;
+    overflow: auto;
+}
+
+#color_pannel,
+#pannel2,
+#pannel3,
+#pannel4 {
+    border: 2px solid black;
+    text-align: center;
+    padding: 4px;
+}
+
+#color_pannel:hover,
+#pannel2:hover,
+#pannel3:hover,
+#pannel4:hover {
+    background-color: aqua;
+}

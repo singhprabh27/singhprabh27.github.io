@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.theme2 {
+    background-color: #ffffff;
+}
+
+/*    background-color: #00ccff;
+        color: #fc9960;
+ */
+.header {
+    padding: 10px;
+    text-align: center;
+    color: #fc9960;
+    margin-bottom: 10px;
+    background-image: url('');
+    background-color: #000000eb;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.sidenav {
+    float: left;
+    width: 20%;
+    background-color: #000000eb;
+    padding: 20px;
+    height: 500px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 20px;
+    color: #fc9960;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    background-color: #88888889;
+}
+
+nav li {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.card table {
+    width: 60%;
+}
+
+.card th {
+    text-align: center;
+    padding-right: 20px;
+}
+
+.readmore {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.rightcolumn {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #000000d2;
+    overflow: auto;
+    height: 500px;
+}
+
+/* image */
+.img {
+    float: right;
+    padding: px;
+    margin: 10px;
+    height: 80%;
+    width: 20%;
+    overflow: hidden;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 5px;
+    margin-top: 30px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.flip1,
+.flip2,
+.flip3,
+.flip4,
+.flip5 {
+    height: 400px;
+    overflow: auto;
+    margin-bottom: 30px;
+    background-color: #aaa;
+}
+
+.flip1,
+.flip2,
+.flip3,
+.flip4,
+.flip5 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.pannel1,
+.pannel2,
+.pannel3,
+.pannel4,
+.pannel5 {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+
+
+
+
+.flip1 {
+    background-image: url('images1/burjkhalifa2.jpg');
+}
+
+.pannel1 {
+    background-image: url('images1/burjkhalifa2.jpg');
+}
+
+.flip2 {
+    background-image: url('images1/merdeka2.jpg');
+}
+
+.pannel2 {
+    background-image: url('images1/merdeka2.jpg');
+}
+
+.flip3 {
+    background-image: url('images1/shanghai2.jpg');
+}
+
+.pannel3 {
+    background-image: url('images1/shanghai2.jpg');
+}
+
+.flip4 {
+    background-image: url('images1/clocktower3.jpg');
+}
+
+.pannel4 {
+    background-image: url('images1/clocktower3.jpg');
+}
+
+.flip5 {
+    background-image: url('images1/finance2.webp');
+}
+
+.pannel5 {
+    background-image: url('images1/finance2.webp');
+}
+
+.card h2 {
+    margin-left: 40%;
+    cursor: pointer;
+}
+
+.tab_header {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #0000006b;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tab_header h2{
+    font-size: 26px;
+    color: #fdb992;
+
+}
+/* Clear floats after the columns */
+.clearfix.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000f0;
+    padding: 5px;
+    text-align: center;
+    color: #fc9960;
+    margin-top: 10px;
+}
+
+.flip p {
+    padding: 5px;
+    display: block;
+    background-color: #ffffffa1;
+}
+
+@media (max-width: 650px) {
+
+    .sidenav,
+    .rightcolumn {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* side nav dropdown pannel*/
+.sidepannel {
+    background-color: #b9b9b989;
+    display: none;
+    overflow: hidden;
+    height: fit-content;
+}
+
+input[type=radio] {
+    accent-color: blue;
+}
+
+/*secondary_heading*/
+.sec_heading{
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #0000006b;
+    color: white;
+    width: 100%;
+}

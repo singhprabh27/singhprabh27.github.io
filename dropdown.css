@@ -1,0 +1,23 @@
+.flip1,
+.flip2,
+.flip3,
+.flip4,.flip5 {
+    display: none;
+    
+}
+
+.pannel1,
+.pannel2,
+.pannel3,
+.pannel4,.pannel5 {
+    transition: transform .2s;
+}
+
+.pannel1:hover,
+.pannel2:hover,
+.pannel3:hover,
+.pannel4:hover,.pannel5:hover {
+    transform: scale(102%);
+    cursor: pointer;
+
+}
