@@ -1,0 +1,1 @@
+image should be 3:2 resolution. please check the type of file before replacing
